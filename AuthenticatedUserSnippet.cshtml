@@ -1,6 +1,12 @@
+@using Orchard.Layouts.Helpers
 @{
+    string redirectUrl = Model.URL;
     if (WorkContext.CurrentUser == null)
     {
-        Response.Redirect("~/Users/Account/LogOn");
+        if(String.IsNullOrEmpty(redirectUrl)) {
+            Response.Redirect("~/Users/Account/LogOn");
+        } else {
+            Response.Redirect("~/" + redirectUrl);
+        }
     }
 }
