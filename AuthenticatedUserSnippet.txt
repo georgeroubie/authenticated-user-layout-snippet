@@ -1,5 +1,5 @@
 DisplayName: Authenticated User 
-ToolboxIcon: \uf007
+ToolboxIcon: "\uf007"
 Description: Authenticated User Snippet
 Category: Snippets
 Fields:
